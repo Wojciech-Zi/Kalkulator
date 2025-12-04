@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Oblicz miesięczną ratę</h3>
+<input type="checkbox" id="react" value="5000"><label for="react.js">Kurs React.js</label>
+<input type="checkbox" id="JS" value="3000"><label for="JS">Kurs JavaScript</label>
+<input class="kontrolki" type="number" id="ilosc" placeholder="Liczba rat">
+<select class="kontrolki" id="miasto">
+<option value="Warszawa">Warszawa</option>
+<option value="Katowice">Katowice</option>
+<option value="Gdańsk">Gdańsk</option>
+</select>
+<button class="kontrolki" onclick="skrypt()">Oblicz</button>
+<script>
+function skrypt() {
+var liczba = parseInt(document.getElementById('ilosc').value);
+var react = getElementById('react');
+var JS = getElementById('JS');
+var miasto = getElementById('miasto');
+var cena1 = 0;
+if (react.checked cena1 += parseFloat(react.value));
+if (JS.checked cena1 += parseFloat(JS.value));
+var rata = cena1 / liczba;
+document.getElementById("wynik").innerHTML = 'Kurs odbędzie się w ' + miasto + "- koszt całkowity: " + 
+}
+</script>
+<p id="wynik" class="kontrolki"></p>
+</body>
+</html>
